@@ -81,7 +81,7 @@ def build_report_data(apiKey, users):
 # function export the report to csv
 def create_csv(schedules):
 
-    fileName = 'active_schedules' + datetime.datetime.now().strftime('_%Y-%m-%d') + '.csv'
+    fileName = 'active_users' + datetime.datetime.now().strftime('_%Y-%m-%d') + '.csv'
     fields = ['id', 'name', 'role', 'num_of_teams_user_is_on', 'num_of_active_sessions']
 
     with open(fileName, 'w') as csvfile:
